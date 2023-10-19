@@ -1,0 +1,13 @@
+<html>
+<body>
+    <img src="/startup_google.jpg" height="500" width="500" name="img1" onmouseover="overfunc()" onmouseout="outfunc()">
+    <script type="text/javascript">
+        function overfunc() {
+            document.img1.src = "/startup_ibm.jpg.png";
+        }
+        var outfunc = function () {
+            document.img1.src = "/startup_google.jpg";
+        }
+    </script>
+</body>
+</html>

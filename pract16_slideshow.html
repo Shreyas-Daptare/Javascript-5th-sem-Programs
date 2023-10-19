@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <img src="/startup_google.jpg" name="imgr" height="500", width="500">
+        <button onclick="slideshow(1)">Next</button>
+        <button onclick="slideshow(-1)">Previous</button>
+    </body>
+    <script>
+        var imgarr = ["/startup_google.jpg","/startup_ibm.jpg.png"];
+        var count = 0;
+        function slideshow(val){
+            if (val == 1){
+                count++;
+            }
+            if (val == -1) {
+                count--;
+            }
+            if (count == imgarr.length) count = 0;
+            if (count == -1) count= imgarr.length - 1;
+            document.imgr.src = imgarr[count];
+        }
+    </script>
+</html>

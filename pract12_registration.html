@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <form>
+            <label for="name">Enter Name</label>
+            <input type="text" id="name"> <br><br>
+            <label for="phno">Enter Ph No.</label>
+            <input type="text" id="phno"> <br> <br>
+            <input type="button" onclick="checkreg()" value="Submit">
+        </form>
+        <script>
+            function checkreg() {
+                var name = document.getElementById("name").value;
+                var phno = parseInt(document.getElementById("phno").value);
+                var regexp = new RegExp("^[0-9]{10,10}$", 'g');
+                var isvalid = regexp.test(phno);
+                console.log(isvalid);
+                if (isvalid == true) {alert("Valid Submission");}
+                else {alert("Invalid Number");}
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            const str1 = "Hello";
+            const str2 = "World";
+            const str3 = "JavaScript";
+            console.log("Length of str1: " + str1.length);
+            const str4 = str1.slice();
+            console.log("str4 after copying str1: " + str4);
+            const str5 = str1.concat(" ", str2);
+            console.log("str5 after concatenation: " + str5);
+            const result = str1.localeCompare(str2);
+            if (result === 0)
+                console.log("str1 and str2 are equal");
+            else if (result < 0)
+                console.log("str1 is less than str2");
+            else
+                console.log("str1 is greater than str2");
+            const index = str5.indexOf("o");
+            console.log("Index of first occurrence of 'o' in str5: " + index);
+            const str6 = str3.toUpperCase();
+            console.log("str6 in uppercase: " + str6);
+            const str7 = str3.toLowerCase();
+            console.log("str7 in lowercase: " + str7);
+            const str8 = "   JavaScript   ";
+            console.log("str8 before trimming: " + str8);
+            const str9 = str8.trim();
+            console.log("str9 after trimming: " + str9);
+            const str10 = "Hello,World,JavaScript";
+            const arr = str10.split(",");
+            console.log("Array after splitting str10: " + arr);
+        </script>
+    </body>
+</html>

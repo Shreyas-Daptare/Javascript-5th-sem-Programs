@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <script>
+            var vowstr = "aei";
+            var regexp = new RegExp("[aeiou]", 'gi');
+            var vowmatch = vowstr.match(regexp);
+            (vowmatch != null)?console.log("Vowel Count: " + vowmatch.length): console.log("There are no vowels in string");
+        </script>
+    </body>
+</html>

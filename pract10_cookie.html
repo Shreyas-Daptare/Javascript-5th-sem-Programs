@@ -1,0 +1,25 @@
+<html lang="en">
+<body>
+    <h1>Enter Details</h1>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username"><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass"><br><br>
+        <input type="submit" value="Submit" onclick="submitbtn()">
+    </form>
+    <script>
+        console.log(document.cookie);
+        function submitbtn() {
+            var username = document.getElementById("username").value
+            var pass = document.getElementById("pass").value
+            //Session Cookie
+            document.cookie = "Password = " + pass + ";" + "SameSite=None" + ";" + "secure=None";
+            //Persistent Cookie
+            document.cookie = "Username = " + username + ";" + "SameSite=None" + ";" + "secure=None; expires=Wed, 27 Sep 2023 12:00:00 UTC";
+            console.log(document.cookie);
+            alert("Username is " + (document.cookie).split(";")[0].split("=")[1] + " and Password is " + (document.cookie).split(";")[1].split("=")[1])
+        }
+    </script>
+</body>
+</html>

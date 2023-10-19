@@ -1,0 +1,24 @@
+<html>
+<body>
+    <form>
+        <select id="websites" onchange="chngpage()">
+            <option name="google">Google</option>
+            <option name="facebook">Facebook</option>
+            <option name="ebay">Ebay</option>
+            <option name="tesla">Tesla</option>
+        </select>
+    </form>
+    <script>
+        function chngpage() {
+            if (document.getElementsByName("google")[0].selected)
+                window.location.href = "https://www.google.com";
+            if (document.getElementsByName("facebook")[0].selected)
+                window.location.href = "https://www.facebook.com";
+            if (document.getElementsByName("ebay")[0].selected)
+                window.location.href = "https://www.ebay.com";
+            if (document.getElementsByName("tesla")[0].selected)
+                window.location.href = "https://www.tesla.com";
+        }
+    </script>
+</body>
+</html>

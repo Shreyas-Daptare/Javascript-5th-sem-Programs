@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            var message = "This is a scrolling message";
+            var pos = 0;
+            function scrollMessage() {
+                var msg = message.substring(pos, message.length) + message.substring(0, pos);
+                console.log(msg)
+                window.status = msg
+                pos++;
+                if (pos > message.length) pos = 0;
+                setTimeout("scrollMessage()", 200);
+            }
+            scrollMessage();
+        </script>
+    </body>
+</html>

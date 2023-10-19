@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            const stack = [];
+            function push(element) {
+                stack.push(element);
+            }
+            function pop() {
+                if (stack.length === 0) 
+                    return "Stack is empty";
+                else 
+                    return stack.pop();
+                }
+            push(10);
+            console.log(pop()); // Output: 10
+            console.log(pop()); // Output: Stack is empty
+        </script>
+    </body>
+</html>

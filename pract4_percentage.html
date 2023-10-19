@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script type="text/javascript">
+        const eng = parseInt(prompt("Enter English marks: "));
+        const math = parseInt(prompt("Enter Math marks: "));
+        const phy = parseInt(prompt("Enter Physics marks: "));
+
+        function calc_percent(eng,math,phy){
+            const totalMarks = eng + math + phy;
+            const percentage = (totalMarks / 300) * 100;
+
+            console.log("Total marks: " + totalMarks);
+            console.log("Percentage: " + percentage + "%")
+        }
+        calc_percent(eng,math,phy);
+    </script>
+</body>
+</html>

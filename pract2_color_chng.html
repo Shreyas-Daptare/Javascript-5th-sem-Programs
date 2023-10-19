@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor = "white";
+        var isyes = window.confirm("Do you want to change background color?");
+        if (isyes) {
+            var color1 = window.prompt("Enter Color");
+            document.body.style.backgroundColor = color1
+        }
+        else {
+            alert("You Chose not to change color");
+        }
+    </script>
+</body>
+</html>

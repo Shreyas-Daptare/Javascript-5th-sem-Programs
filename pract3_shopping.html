@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script type="text/javascript">
+        var item_prices = [];
+        for(let i=0; i<10;i++){
+            item_prices[i] = parseInt(window.prompt("Enter Price for product no. " + i + 1), 10);
+        }
+        item_prices = item_prices.sort(function (a, b) { return a - b });
+        console.log("Prices sorted in order: ")
+        for (let i = 0; i < 10; i++) {
+            console.log(item_prices[i]);
+        }
+    </script>
+</body>
+</html>

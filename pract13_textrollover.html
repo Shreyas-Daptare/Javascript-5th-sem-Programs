@@ -1,0 +1,13 @@
+<html>
+<body>
+    <p name="p1" onmouseover="overfunc()" onmouseout="outfunc()">This is Default</p>
+    <script type="text/javascript">
+        function overfunc() {
+            document.getElementsByName("p1")[0].innerHTML = "Roll Over Effect";
+        }
+        var outfunc = function () {
+            document.getElementsByName("p1")[0].innerHTML = "This is Default";
+        }
+    </script>
+</body>
+</html>

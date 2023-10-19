@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change URL</title>
+</head>
+
+<body onload="chngurl()">
+    <a href="" name="addr"><img src="startup_google.jpg" height="500" width="500" name="imgr"></a>
+    <script>
+        var count = 0;
+        var urls = new Array("google.com", "facebook.com", "amazon.in", "ebay.com");
+        var degrees = new Array(90,180,270,360);
+        function chngurl() {
+            if (count == urls.length)
+                count = 0;
+            document.getElementsByName("addr")[0].href = "https://www." + urls[count];
+            document.imgr.style.transform = "rotate(" + degrees[count] +"deg)";
+            count++;
+            setTimeout(chngurl, 2000);
+        }
+    </script>
+</body>
+</html>

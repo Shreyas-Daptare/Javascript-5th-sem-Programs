@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            var myWindow;
+            function openWindow() {
+                    myWindow = window.open("", "", "width=" + parseInt(document.getElementById("width").value) + ", height=" + parseInt(document.getElementById("height").value));
+                }
+                function moveWindow() {
+                    myWindow.moveTo(parseInt(document.getElementById("height").value), parseInt(document.getElementById("width").value));
+                }
+                function resizeWindow() {
+                    myWindow.resizeTo(parseInt(document.getElementById("height").value), parseInt(document.getElementById("width").value));
+                }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="height">Height/X</label>
+            <input type="text" id="height"> <br> <br>
+            <label for="width">Width/Y</label>
+            <input type="text" id="width"><br> <br>
+
+            <input type="button" value="Create Window" onclick="openWindow()">
+            <input type="button" value="Move Window" onclick="moveWindow()">
+            <input type="button" value="Resize Window" onclick="resizeWindow()">
+        </form>
+    </body>
+</html>
